@@ -5,4 +5,21 @@
 [node name="MainLevel" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_8kffp")]
-position = Vector2(263, 58)
+position = Vector2(319, 133)
+_polarity = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 19.0
+offset_top = 59.0
+offset_right = 187.0
+offset_bottom = 113.0
+text = "Deal Damage"
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = 19.0
+offset_top = 14.0
+offset_right = 102.0
+offset_bottom = 40.0
+text = "Health : 11"
+
+[connection signal="pressed" from="Button" to="Player" method="_on_button_pressed"]
