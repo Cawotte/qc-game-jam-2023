@@ -1,5 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwdqfhy5ja0cv"]
+[gd_scene load_steps=3 format=3 uid="uid://cwdqfhy5ja0cv"]
 
 [ext_resource type="PackedScene" uid="uid://hd35vlq3i2rt" path="res://Scenes/EntityBase.tscn" id="1_jse3l"]
+[ext_resource type="Texture2D" uid="uid://cqsfs5fan6nsx" path="res://Assets/kenney_simple-space/PNG/Default/meteor_large.png" id="2_vf38u"]
 
 [node name="Player" instance=ExtResource("1_jse3l")]
+
+[node name="Sprite2D" parent="RigidBody2D" index="0"]
+texture_filter = 3
+position = Vector2(0, 0)
+scale = Vector2(2, 1.993)
+texture = ExtResource("2_vf38u")
