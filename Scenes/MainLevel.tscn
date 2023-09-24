@@ -5,7 +5,7 @@
 [node name="MainLevel" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_8kffp")]
-position = Vector2(319, 133)
+position = Vector2(605, 347)
 _polarity = 1
 
 [node name="Button" type="Button" parent="."]

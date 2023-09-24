@@ -11,6 +11,9 @@ public partial class Entity : Node2D
 	
 	[Export]
 	protected int _health = 10;
+
+	[Export]
+	protected int _speed = 5;
 	
 	[Export]
 	protected Polarity _polarity = Polarity.Black;
