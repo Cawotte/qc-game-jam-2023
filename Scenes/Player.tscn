@@ -4,12 +4,16 @@
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="2_tdexc"]
 [ext_resource type="Texture2D" uid="uid://cqsfs5fan6nsx" path="res://Assets/kenney_simple-space/PNG/Default/meteor_large.png" id="2_vf38u"]
 
-[node name="Player" instance=ExtResource("1_jse3l")]
+[node name="Player" node_paths=PackedStringArray("_rb") instance=ExtResource("1_jse3l")]
 position = Vector2(3, 0)
 script = ExtResource("2_tdexc")
+_rb = NodePath("RigidBody2D")
 
 [node name="Sprite2D" parent="RigidBody2D" index="0"]
 texture_filter = 3
 position = Vector2(0, 0)
 scale = Vector2(2, 1.993)
 texture = ExtResource("2_vf38u")
+
+[node name="Camera2D" type="Camera2D" parent="RigidBody2D" index="2"]
+position_smoothing_enabled = true

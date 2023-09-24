@@ -4,6 +4,7 @@ using System;
 public partial class Player : Entity
 {
 
+	[Export]
 	private RigidBody2D _rb;
 
 	// Called when the node enters the scene tree for the first time.
